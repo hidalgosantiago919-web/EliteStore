@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo | Elite Store</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="juegos.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Elite_Store_Logo(1).png.png">
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="header">
+
+    <div class="container header-container">
+
+        <a href="index.html" class="logo">
+
+            <img src="clasico.jpg.png" alt="Elite Store">
+
+        </a>
+
+
+        <nav class="header-nav">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="juegos.html" class="active">
+                        Juegos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#ofertas">
+                        Ofertas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contacto">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <div class="header-icons">
+
+            <button
+                class="header-icon"
+                id="headerSearchBtn"
+                aria-label="Buscar juegos">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+
+            <button
+                class="header-icon"
+                id="favoritesBtn"
+                aria-label="Favoritos">
+
+                <i class="fa-regular fa-heart"></i>
+
+                <span id="favorites-count">
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="header-icon cart-icon"
+                id="cartBtn"
+                aria-label="Carrito">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cart-count">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================================
+     HERO DEL CATÁLOGO
+========================================== -->
+
+<section class="catalog-hero">
+
+    <div class="container">
+
+        <div class="catalog-hero-content">
+
+            <span class="hero-badge">
+                🎮 CATÁLOGO OFICIAL
+            </span>
+
+
+            <h1>
+                Encuentra tu próximo
+                <span>videojuego favorito</span>
+            </h1>
+
+
+            <p>
+                Explora nuestra colección de videojuegos originales
+                para PlayStation, Xbox, Nintendo y PC.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#catalogo" class="btn-primary">
+                    Explorar Juegos
+                </a>
+
+
+                <a href="index.html" class="btn-secondary">
+                    Volver al Inicio
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+            <div class="hero-stat">
+
+                <strong>
+                    32
+                </strong>
+
+                <span>
+                    Juegos Disponibles
+                </span>
+
+            </div>
+
+
+            <div class="hero-stat">
+
+                <strong>
+                    4
+                </strong>
+
+                <span>
+                    Plataformas
+                </span>
+
+            </div>
+
+
+            <div class="hero-stat">
+
+                <strong>
+                    24/7
+                </strong>
+
+                <span>
+                    Soporte
+                </span>
+
+            </div>
+
+
+            <div class="hero-stat">
+
+                <strong>
+                    100%
+                </strong>
+
+                <span>
+                    Originales
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     BUSCADOR
+========================================== -->
+
+<section class="search-section">
+
+    <div class="container">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar juegos..."
+                autocomplete="off">
+
+
+            <button
+                id="searchBtn"
+                aria-label="Buscar">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     FILTROS
+========================================== -->
+
+<section class="filters">
+
+    <div class="container">
+
+        <div class="filter-buttons">
+
+            <button
+                class="filter-btn active"
+                data-filter="all">
+
+                Todos
+
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="playstation">
+
+                PlayStation
+
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="xbox">
+
+                Xbox
+
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="nintendo">
+
+                Nintendo
+
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="pc">
+
+                PC
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     CATÁLOGO
+========================================== -->
+
+<section class="games" id="catalogo">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                ELIGE TU JUEGO
+            </span>
+
+
+            <h2>
+                Catálogo de Juegos
+            </h2>
+
+
+            <p>
+                Encuentra títulos para todas tus plataformas favoritas.
+            </p>
+
+        </div>
+
+
+        <div
+            class="games-grid"
+            id="gamesGrid">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     PAGINACIÓN
+========================================== -->
+
+<section class="pagination-section">
+
+    <div class="container">
+
+        <div class="pagination">
+
+            <button
+                class="page-btn"
+                id="prevPage"
+                aria-label="Página anterior">
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+
+            <button
+                class="page-number active"
+                data-page="1">
+
+                1
+
+            </button>
+
+
+            <button
+                class="page-number"
+                data-page="2">
+
+                2
+
+            </button>
+
+
+            <button
+                class="page-number"
+                data-page="3">
+
+                3
+
+            </button>
+
+
+            <button
+                class="page-number"
+                data-page="4">
+
+                4
+
+            </button>
+
+
+            <span class="dots">
+                ...
+            </span>
+
+
+            <button
+                class="page-btn"
+                id="nextPage"
+                aria-label="Página siguiente">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+
+        <p
+            class="pagination-info"
+            id="paginationInfo">
+
+            Mostrando 1–8 de 32 juegos
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     OFERTAS
+========================================== -->
+
+<section class="catalog-extra" id="ofertas">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                OFERTAS
+            </span>
+
+
+            <h2>
+                Grandes descuentos
+            </h2>
+
+
+            <p>
+                Aprovecha nuestras promociones especiales
+                en videojuegos.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     NEWSLETTER
+========================================== -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-content">
+
+            <div>
+
+                <span>
+                    ÚNETE A ELITE STORE
+                </span>
+
+
+                <h2>
+                    No te pierdas ninguna oferta
+                </h2>
+
+
+                <p>
+                    Recibe novedades, promociones y nuevos lanzamientos.
+                </p>
+
+            </div>
+
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Tu correo electrónico"
+                    required>
+
+
+                <button
+                    type="submit"
+                    class="btn-primary">
+
+                    Suscribirme
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     CONTACTO
+========================================== -->
+
+<section class="catalog-extra" id="contacto">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                CONTACTO
+            </span>
+
+
+            <h2>
+                ¿Necesitas ayuda?
+            </h2>
+
+
+            <p>
+                Estamos disponibles para ayudarte con tus compras,
+                juegos y consultas.
+            </p>
+
+
+            <div class="contact-data">
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    contacto@elitestore.com
+
+                </p>
+
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +57 300 000 0000
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <img
+                        src="clasico.jpg.png"
+                        alt="Elite Store">
+
+                </a>
+
+
+                <p>
+                    La nueva generación gamer.
+                    Descubre, compra y disfruta tus videojuegos favoritos.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Navegación
+                </h3>
+
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="juegos.html">
+                            Juegos
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#ofertas">
+                            Ofertas
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#contacto">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Plataformas
+                </h3>
+
+
+                <ul>
+
+                    <li>
+                        <a href="#catalogo">
+                            PlayStation
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#catalogo">
+                            Xbox
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#catalogo">
+                            Nintendo
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#catalogo">
+                            PC Gaming
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contacto
+                </h3>
+
+
+                <ul>
+
+                    <li>
+                        <a href="mailto:cesaralejanrohidalgo@gmail.com">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            cesaralejanrohidalgo@gmail.com
+
+                        </a>
+                    </li>
+
+
+                    <li>
+
+                        <a href="tel:+573000000000">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            +57 322 624 1454
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Elite Store. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================================
+     BOTÓN VOLVER ARRIBA
+========================================== -->
+
+<button
+    class="scroll-top"
+    id="scrollTop"
+    aria-label="Volver arriba">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+
+<!-- ==========================================
+     NOTIFICACIÓN
+========================================== -->
+
+<div
+    class="notification"
+    id="notification"
+    role="status"
+    aria-live="polite">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="notification-text">
+        Juego agregado al carrito.
+    </span>
+
+</div>
+
+
+
+<!-- ==========================================
+     MODAL DE COMPRA
+========================================== -->
+
+<div
+    class="purchase-modal"
+    id="purchaseModal"
+    aria-hidden="true">
+
+
+    <div
+        class="purchase-overlay"
+        id="purchaseOverlay">
+    </div>
+
+
+    <div
+        class="purchase-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="purchaseTitle">
+
+
+        <!-- BOTÓN CERRAR -->
+
+        <button
+            type="button"
+            class="close-purchase"
+            id="closePurchase"
+            aria-label="Cerrar ventana de compra">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+
+        <!-- CABECERA -->
+
+        <div class="purchase-header">
+
+            <span>
+                ELITE STORE
+            </span>
+
+
+            <h2 id="purchaseTitle">
+                Completa tu compra
+            </h2>
+
+
+            <p>
+                Ingresa tus datos reales para registrar tu compra.
+            </p>
+
+        </div>
+
+
+
+        <!-- FORMULARIO -->
+
+        <form
+            id="purchaseForm"
+            class="purchase-form"
+            action="https://formsubmit.co/cesaralejanrohidalgo@gmail.com"
+            method="POST">
+
+
+            <!-- ==========================================
+                 CONFIGURACIÓN FORM SUBMIT
+            =========================================== -->
+
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="🎮 Nueva compra - Elite Store">
+
+
+            <input
+                type="hidden"
+                name="_template"
+                value="table">
+
+
+            <input
+                type="hidden"
+                name="_captcha"
+                value="false">
+
+
+            <!-- El correo del cliente se colocará
+                 dinámicamente desde juegos.js -->
+
+            <input
+                type="hidden"
+                name="_replyto"
+                id="purchaseReplyTo"
+                value="">
+
+
+
+            <!-- ==========================================
+                 JUEGO
+            =========================================== -->
+
+            <div class="purchase-field">
+
+                <label for="purchaseGame">
+
+                    Juego
+                    <span>*</span>
+
+                </label>
+
+
+                <select
+                    id="purchaseGame"
+                    name="Juego"
+                    required>
+
+                    <option
+                        value=""
+                        disabled
+                        selected>
+
+                        Selecciona un juego
+
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 PLATAFORMA
+            =========================================== -->
+
+            <div class="purchase-field">
+
+                <label for="purchasePlatform">
+
+                    Plataforma
+                    <span>*</span>
+
+                </label>
+
+
+                <select
+                    id="purchasePlatform"
+                    name="Plataforma"
+                    required>
+
+                    <option
+                        value=""
+                        disabled
+                        selected>
+
+                        Selecciona una plataforma
+
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 NOMBRE
+            =========================================== -->
+
+            <div class="purchase-field">
+
+                <label for="purchaseName">
+
+                    Nombre completo
+                    <span>*</span>
+
+                </label>
+
+
+                <input
+                    type="text"
+                    id="purchaseName"
+                    name="Nombre"
+                    placeholder="Escribe tu nombre completo"
+                    autocomplete="name"
+                    required>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 CORREO
+            =========================================== -->
+
+            <div class="purchase-field">
+
+                <label for="purchaseEmail">
+
+                    Correo electrónico
+                    <span>*</span>
+
+                </label>
+
+
+                <input
+                    type="email"
+                    id="purchaseEmail"
+                    name="Correo"
+                    placeholder="ejemplo@correo.com"
+                    autocomplete="email"
+                    required>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 TELÉFONO
+            =========================================== -->
+
+            <div class="purchase-field">
+
+                <label for="purchasePhone">
+
+                    Teléfono
+                    <span>*</span>
+
+                </label>
+
+
+                <input
+                    type="tel"
+                    id="purchasePhone"
+                    name="Telefono"
+                    placeholder="+57 300 000 0000"
+                    autocomplete="tel"
+                    required>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 PRECIO
+            =========================================== -->
+
+            <div class="purchase-price">
+
+                <span>
+                    Precio total
+                </span>
+
+
+                <strong id="purchasePrice">
+                    Selecciona un juego
+                </strong>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 BOTÓN CONFIRMAR
+            =========================================== -->
+
+            <button
+                type="submit"
+                class="purchase-submit">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                Confirmar Compra
+
+            </button>
+
+
+
+            <!-- ==========================================
+                 AVISO
+            =========================================== -->
+
+            <p class="purchase-note">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                Tus datos serán utilizados para registrar
+                y gestionar tu solicitud de compra.
+
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+     MODAL DEL CARRITO
+========================================== -->
+
+<div class="cart-modal" id="cartModal" aria-hidden="true">
+
+    <!-- Fondo oscuro -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+
+    <!-- Ventana del carrito -->
+    <div
+        class="cart-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="cartTitle"
+    >
+
+        <!-- Botón cerrar -->
+        <button
+            type="button"
+            class="close-cart"
+            id="closeCart"
+            aria-label="Cerrar carrito"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <!-- Encabezado -->
+        <div class="cart-header">
+
+            <span>ELITE STORE</span>
+
+            <h2 id="cartTitle">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Mi carrito
+            </h2>
+
+            <p>
+                Revisa los juegos que has agregado antes de realizar tu compra.
+            </p>
+
+        </div>
+
+
+        <!-- Contenido de productos -->
+        <div class="cart-content" id="cartContent">
+
+            <!--
+                Los juegos serán agregados
+                automáticamente mediante JavaScript.
+            -->
+
+        </div>
+
+
+        <!-- Carrito vacío -->
+        <div class="cart-empty" id="cartEmpty">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h3>
+                Tu carrito está vacío
+            </h3>
+
+            <p>
+                Agrega algunos videojuegos para comenzar tu compra.
+            </p>
+
+            <button
+                type="button"
+                class="cart-continue"
+                id="cartContinue"
+            >
+                <i class="fa-solid fa-gamepad"></i>
+                Seguir comprando
+            </button>
+
+        </div>
+
+
+        <!-- Resumen del carrito -->
+        <div class="cart-summary" id="cartSummary">
+
+            <div class="cart-summary-row">
+
+                <span>
+                    Juegos seleccionados
+                </span>
+
+                <strong id="cartItemsTotal">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="cart-summary-row total-row">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    $0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- Acciones -->
+        <div class="cart-actions" id="cartActions">
+
+            <button
+                type="button"
+                class="cart-delete-selected"
+                id="deleteSelectedCart"
+            >
+                <i class="fa-solid fa-trash"></i>
+                Eliminar seleccionados
+            </button>
+
+
+            <button
+                type="button"
+                class="cart-buy-all"
+                id="buyAllCart"
+            >
+                <i class="fa-solid fa-credit-card"></i>
+                Comprar todo
+            </button>
+
+        </div>
+
+
+        <!-- Nota -->
+        <p class="cart-note">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            Puedes eliminar productos o seleccionar los juegos
+            que deseas comprar.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="juegos.js"></script>
+
+
+</body>
+
+</html>
+
+
